@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Portal - Placement Training System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: ["class"],
+            theme: {
+                container: { center: true, padding: "2rem", screens: { "2xl": "1400px" } },
+                extend: {
+                    colors: {
+                        border: "hsl(214 32% 91%)",
+                        input: "hsl(214 32% 91%)",
+                        ring: "hsl(222 47% 20%)",
+                        background: "hsl(210 20% 98%)",
+                        foreground: "hsl(222 47% 11%)",
+                        primary: { DEFAULT: "hsl(222 47% 20%)", foreground: "hsl(210 40% 98%)" },
+                        secondary: { DEFAULT: "hsl(180 45% 45%)", foreground: "hsl(0 0% 100%)" },
+                        destructive: { DEFAULT: "hsl(0 84% 60%)", foreground: "hsl(210 40% 98%)" },
+                        muted: { DEFAULT: "hsl(210 20% 94%)", foreground: "hsl(215 16% 47%)" },
+                        accent: { DEFAULT: "hsl(38 92% 50%)", foreground: "hsl(222 47% 11%)" },
+                        success: { DEFAULT: "hsl(152 69% 40%)", foreground: "hsl(0 0% 100%)" },
+                        warning: { DEFAULT: "hsl(38 92% 50%)", foreground: "hsl(222 47% 11%)" },
+                        info: { DEFAULT: "hsl(199 89% 48%)", foreground: "hsl(0 0% 100%)" },
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-background text-foreground min-h-screen flex flex-col">
+
+    <!-- Header injected via main.js -->
+
+    <main class="flex-1">
+        <!-- Hero Section -->
+        <section class="bg-gradient-hero py-16 lg:py-24">
+            <div class="container">
+                <div class="mx-auto max-w-4xl text-center">
+                    <span class="mb-4 inline-block rounded-full bg-primary-foreground/10 px-4 py-1.5 text-sm font-medium text-primary-foreground backdrop-blur-sm">
+                        Learning Portal
+                    </span>
+                    <h1 class="mb-4 font-display text-3xl font-bold text-primary-foreground sm:text-4xl lg:text-5xl">
+                        Master Your Skills
+                    </h1>
+                    <p class="mb-8 text-lg text-primary-foreground/80">
+                        Access comprehensive training videos, track your progress, and earn certifications
+                    </p>
+                    
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col items-center justify-center gap-4 sm:flex-row animate-slide-up">
+                        <button onclick="showRegistrationForm()" 
+                            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-12 px-8 py-6 text-lg bg-accent text-accent-foreground hover:bg-accent/90 shadow-glow hover:scale-105 transition-all">
+                            <i data-lucide="user-plus" class="mr-3 h-6 w-6"></i>
+                            Register Now
+                        </button>
+                        <button onclick="showContinueLearning()" 
+                            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-12 px-8 py-6 text-lg bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow hover:scale-105 transition-all">
+                            <i data-lucide="play-circle" class="mr-3 h-6 w-6"></i>
+                            Continue Learning
+                        </button>
+                        <button onclick="showStartLearning()" 
+                            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-12 px-8 py-6 text-lg border-2 border-primary-foreground/20 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20 backdrop-blur-sm">
+                            <i data-lucide="book-open" class="mr-3 h-6 w-6"></i>
+                            Start Learning
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section id="registration-section" class="hidden py-12 lg:py-16">
+            <div class="container">
+                <div class="mx-auto max-w-2xl">
+                    <div class="rounded-xl border border-border bg-card p-8 shadow-card">
+                        <div class="mb-6 text-center">
+                            <h2 class="mb-2 font-display text-2xl font-bold">Enroll Now</h2>
+                            <p class="text-muted-foreground">Join our placement training program</p>
+                        </div>
+                        
+                        <form id="registration-form" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="mb-2 block text-sm font-medium">Full Name</label>
+                                    <input type="text" id="reg-name" required
+                                        class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                                </div>
+                                <div>
+                                    <label class="mb-2 block text-sm font-medium">Email Address</label>
+                                    <input type="email" id="reg-email" required
+                                        class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                                </div>
+                                <div>
+                                    <label class="mb-2 block text-sm font-medium">Phone Number</label>
+                                    <input type="tel" id="reg-phone" required
+                                        class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                                </div>
+                                <div>
+                                    <label class="mb-2 block text-sm font-medium">Department</label>
+                                    <select id="reg-department" required
+                                        class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                                        <option value="">Select Department</option>
+                                        <option value="Computer Science">Computer Science</option>
+                                        <option value="Information Technology">Information Technology</option>
+                                        <option value="Electronics">Electronics</option>
+                                        <option value="Mechanical">Mechanical</option>
+                                        <option value="Civil">Civil</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="mb-2 block text-sm font-medium">Year/ Semester</label>
+                                    <select id="reg-year" required
+                                        class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                                        <option value="">Select Year</option>
+                                        <option value="1st Year">1st Year</option>
+                                        <option value="2nd Year">2nd Year</option>
+                                        <option value="3rd Year">3rd Year</option>
+                                        <option value="4th Year">4th Year</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="mb-2 block text-sm font-medium">Password</label>
+                                    <input type="password" id="reg-password" required
+                                        class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="mb-2 block text-sm font-medium">Why do you want to join this program?</label>
+                                <textarea id="reg-reason" rows="4" required
+                                    class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                                    placeholder="Tell us about your learning goals..."></textarea>
+                            </div>
+                            
+                            <div class="flex gap-4">
+                                <button type="submit" 
+                                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-6">
+                                    <i data-lucide="check" class="mr-2 h-4 w-4"></i>
+                                    Submit Registration
+                                </button>
+                                <button type="button" onclick="hideRegistrationForm()"
+                                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-6">
+                                    Cancel
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Interface Section -->
+        <section id="learning-section" class="hidden py-12 lg:py-16">
+            <div class="container">
+                <div class="mx-auto max-w-5xl">
+                    <!-- Progress Header -->
+                    <div class="mb-8 rounded-xl border border-border bg-card p-6 shadow-card">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h2 class="mb-2 font-display text-xl font-bold">Your Learning Progress</h2>
+                                <p class="text-muted-foreground">Track your video completion and test results</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-muted-foreground">Overall Progress</p>
+                                <p class="text-2xl font-bold text-primary" id="overall-progress">0%</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 w-full bg-muted rounded-full h-3">
+                            <div id="progress-bar" class="bg-gradient-to-r from-primary to-secondary h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Video Content -->
+                    <div class="grid gap-8 lg:grid-cols-3">
+                        <!-- Video Player -->
+                        <div class="lg:col-span-2">
+                            <div class="rounded-xl border border-border bg-card shadow-card overflow-hidden">
+                                <div class="aspect-video bg-black relative">
+                                    <video id="video-player" class="w-full h-full" controls>
+                                        <source src="" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <div id="video-overlay" class="absolute inset-0 flex items-center justify-center bg-black/50">
+                                        <div class="text-center">
+                                            <i data-lucide="play-circle" class="h-16 w-16 text-white mb-4"></i>
+                                            <p class="text-white text-lg">Select a video to start learning</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Video Info -->
+                                <div class="p-6">
+                                    <h3 id="video-title" class="mb-2 font-display text-lg font-semibold">Select a Video</h3>
+                                    <p id="video-description" class="mb-4 text-muted-foreground">Choose a video from the playlist to begin your learning journey</p>
+                                    
+                                    <!-- Video Actions -->
+                                    <div class="flex gap-3">
+                                        <button id="complete-video-btn" onclick="markVideoComplete()" disabled
+                                            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-success text-success-foreground hover:bg-success/90 h-10 px-4">
+                                            <i data-lucide="check-circle" class="mr-2 h-4 w-4"></i>
+                                            Mark as Complete
+                                        </button>
+                                        <button id="take-test-btn" onclick="takeTest()" disabled
+                                            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/90 h-10 px-4">
+                                            <i data-lucide="file-text" class="mr-2 h-4 w-4"></i>
+                                            Take Test
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video Playlist -->
+                        <div class="lg:col-span-1">
+                            <div class="rounded-xl border border-border bg-card p-6 shadow-card">
+                                <h3 class="mb-4 font-display text-lg font-semibold">Course Content</h3>
+                                <div id="video-playlist" class="space-y-3">
+                                    <!-- Videos will be loaded here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Test Section -->
+        <section id="test-section" class="hidden py-12 lg:py-16">
+            <div class="container">
+                <div class="mx-auto max-w-3xl">
+                    <div class="rounded-xl border border-border bg-card p-8 shadow-card">
+                        <div class="mb-6 text-center">
+                            <h2 class="mb-2 font-display text-2xl font-bold">Knowledge Assessment</h2>
+                            <p class="text-muted-foreground">Test your understanding of the completed modules</p>
+                        </div>
+                        
+                        <div id="test-container" class="space-y-6">
+                            <!-- Test questions will be loaded here -->
+                        </div>
+                        
+                        <div class="mt-8 text-center">
+                            <button onclick="submitTest()" 
+                                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8">
+                                <i data-lucide="send" class="mr-2 h-5 w-5"></i>
+                                Submit Test
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificate Section -->
+        <section id="certificate-section" class="hidden py-12 lg:py-16">
+            <div class="container">
+                <div class="mx-auto max-w-4xl">
+                    <div class="rounded-xl border border-border bg-card p-8 shadow-card text-center">
+                        <div class="mb-6">
+                            <i data-lucide="award" class="mx-auto h-16 w-16 text-primary"></i>
+                        </div>
+                        <h2 class="mb-4 font-display text-3xl font-bold">Congratulations!</h2>
+                        <p class="mb-6 text-lg text-muted-foreground">You have successfully completed the course</p>
+                        
+                        <!-- Certificate Preview -->
+                        <div class="mb-8 rounded-lg border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-secondary/5 p-8">
+                            <div class="border-2 border-primary/30 rounded p-6 bg-white">
+                                <h3 class="mb-4 font-display text-2xl font-bold text-primary">Certificate of Completion</h3>
+                                <p class="mb-2">This is to certify that</p>
+                                <p class="mb-4 text-xl font-semibold" id="cert-name">Student Name</p>
+                                <p class="mb-2">has successfully completed the</p>
+                                <p class="mb-4 text-lg font-semibold">Placement Training Program</p>
+                                <p class="text-sm text-muted-foreground">on <span id="cert-date">Date</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4 justify-center">
+                            <button onclick="downloadCertificate()" 
+                                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-6">
+                                <i data-lucide="download" class="mr-2 h-4 w-4"></i>
+                                Download Certificate
+                            </button>
+                            <button onclick="shareCertificate()" 
+                                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-6">
+                                <i data-lucide="share-2" class="mr-2 h-4 w-4"></i>
+                                Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer injected via main.js -->
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/learning.js"></script>
+    <script>
+        injectHeader();
+        injectFooter();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Placement Drive - Mentor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: ["class"],
+            theme: {
+                container: { center: true, padding: "2rem", screens: { "2xl": "1400px" } },
+                extend: {
+                    colors: {
+                        border: "hsl(214 32% 91%)",
+                        input: "hsl(214 32% 91%)",
+                        ring: "hsl(222 47% 20%)",
+                        background: "hsl(210 20% 98%)",
+                        foreground: "hsl(222 47% 11%)",
+                        primary: { DEFAULT: "hsl(222 47% 20%)", foreground: "hsl(210 40% 98%)" },
+                        secondary: {
+                            DEFAULT: "hsl(180 45% 45%)", foreground: "hsl(0 0% 100%)"
+                        },
+                    },
+                },
+            }
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-background text-foreground min-h-screen flex flex-col">
+    <main class="flex-1 py-12">
+        <div class="container mx-auto max-w-2xl px-4">
+            <div class="rounded-xl border border-border bg-card p-8 shadow-card">
+                <h1 class="mb-6 font-display text-3xl font-bold">Create Placement Drive</h1>
+                <p class="mb-8 text-muted-foreground text-sm">Add a new company placement drive for students</p>
+
+                <form id="create-drive-form" class="space-y-6">
+                    <div>
+                        <label class="mb-2 block text-sm font-medium">Company Name</label>
+                        <input type="text" id="companyName" required placeholder="e.g. Google, Microsoft"
+                            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                    </div>
+
+                    <div>
+                        <label class="mb-2 block text-sm font-medium">Job Role</label>
+                        <input type="text" id="role" required placeholder="e.g. Software Engineer, Data Analyst"
+                            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="mb-2 block text-sm font-medium">Package (LPA)</label>
+                            <input type="text" id="package" required placeholder="e.g. 12-15"
+                                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                        </div>
+                        <div>
+                            <label class="mb-2 block text-sm font-medium">Drive Date</label>
+                            <input type="date" id="driveDate" required
+                                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="mb-2 block text-sm font-medium">Location</label>
+                        <select id="location" required
+                            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                            <option value="On-Campus">On-Campus</option>
+                            <option value="Off-Campus">Off-Campus</option>
+                            <option value="Virtual">Virtual</option>
+                        </select>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="mb-2 block text-sm font-medium">Minimum CGPA</label>
+                            <input type="number" id="minCGPA" step="0.1" min="0" max="10" required
+                                placeholder="e.g. 7.5"
+                                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                        </div>
+                        <div>
+                            <label class="mb-2 block text-sm font-medium">Max Backlogs Allowed</label>
+                            <input type="number" id="maxBacklogs" min="0" required placeholder="e.g. 0"
+                                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="mb-2 block text-sm font-medium">Allowed Branches</label>
+                        <input type="text" id="allowedBranches" required
+                            placeholder="e.g. CSE, IT, ECE (comma-separated)"
+                            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                    </div>
+
+                    <div>
+                        <label class="mb-2 block text-sm font-medium">Description</label>
+                        <textarea id="description" rows="3" required
+                            placeholder="Brief description of the role and company"
+                            class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"></textarea>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <button type="submit"
+                            class="bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-6 rounded-md font-medium transition-colors">
+                            Create Drive
+                        </button>
+                        <a href="index.html"
+                            class="border border-input bg-background hover:bg-accent h-10 px-6 rounded-md font-medium transition-colors inline-flex items-center">
+                            Cancel
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Existing Drives -->
+            <div id="existing-drives" class="mt-8 rounded-xl border border-border bg-card p-8 shadow-card">
+                <h2 class="mb-4 font-display text-2xl font-bold">Your Created Placement Drives</h2>
+                <p class="mb-6 text-muted-foreground text-sm">Manage all placement drives you've created</p>
+                <div id="drives-list" class="space-y-4">
+                    <!-- Drives will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/create-drive.js"></script>
+    <script>
+        injectHeader();
+        injectFooter();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1196 @@
+{
+  "users": [
+    {
+      "id": "8302",
+      "name": "SANJAY S",
+      "email": "san9042jay@gmail.com",
+      "password": "1234567890",
+      "confirmPassword": "1234567890",
+      "role": "student",
+      "createdAt": "2026-01-05T16:41:09.754Z"
+    },
+    {
+      "id": "a646",
+      "name": "SANJAY S",
+      "email": "san9042jay@gmail.com",
+      "password": "1234567890",
+      "confirmPassword": "1234567890",
+      "role": "student",
+      "createdAt": "2026-01-05T16:42:06.815Z"
+    },
+    {
+      "id": "0d91",
+      "name": "Ram",
+      "email": "joysanjay19@gmail.com",
+      "password": "9089078906",
+      "confirmPassword": "9089078906",
+      "role": "officer",
+      "createdAt": "2026-01-05T16:45:31.740Z"
+    },
+    {
+      "id": "9476",
+      "name": "SANJAY S",
+      "email": "joysanjay19@srishakthi.ac.in",
+      "password": "9089078906",
+      "confirmPassword": "9089078906",
+      "department": "IT",
+      "role": "student",
+      "createdAt": "2026-01-05T17:02:53.368Z",
+      "avatar": "data:image/jpeg;base64,/9j/4Q21RXhpZgAATU0AKgAAAAgAD5mZAAIAAACDAAAAwoiaAAEAAAABAAAAAAEBAAQAAAABAAAYAAEPAAIAAAAHAAABRQESAAMAAAABAAEAAAEyAAIAAAAUAAABTIglAAQAAAABAAAMogEbAAUAAAABAAABYAEaAAUAAAABAAABaAEAAAQAAAABAAAf4AEQAAIAAAALAAABcAITAAMAAAABAAEAAIdpAAQAAAABAAABhwEoAAMAAAABAAIAAJoAAAIAAAAMAAABewAAAAB7Im1pcnJvciI6ZmFsc2UsInNlbnNvclR5cGUiOiJyZWFyIiwiSGRyIjoib2ZmIiwiT3BNb2RlIjozNjg2OCwic21hbGxQaWN0dXJlIjpmYWxzZSwiQUlTY2VuZSI6MCwiZmlsdGVySWQiOjY2MDQ4LCJ6b29tTXVsdGlwbGUiOjF9AFhpYW9taQAyMDIzOjA4OjMxIDExOjEzOjI0AAAAAEgAAAABAAAASAAAAAEyMzA3NlJONEJJAFJlZG1pIDEyIDVHAAAikAAAAgAAAAQwMjIwkgIABQAAAAEAAAMlmZkAAgAAAIMAAAMtkgQACgAAAAEAAAOwoAEAAwAAAAEAAQAAiJoAAQAAAAEAAAAkgUABQAAAAEAAAO4oAMABAAAAAEAABgAkAMAAgAAABQAAAPAoAAABwAAAAQwMTAwpmEAAgAAAAQxNzUAkpEAAgAAAAQ1MzEApAMAAwAAAAEAAAAAoAUABAAAAAEAAA2PgpoABQAAAAEAAAPUkBAAAgAAAAcAAAPckgkAAwAAAAEAGAAAkpAAAgAAAAQ1MzEAgp0ABQAAAAEAAAPjmqoAAQAACIAAAAProAIABAAAAAEAAB/giCcAAwAAAAEAMgAAkQEABwAAAAQBAgMApAUAAwAAAAEAHAAAkpIAAgAAAAQ1MzEAkAQAAgAAABQAAAxrkgEACgAAAAEAAAx/kgcAAwAAAAEAAgAAkgoABQAAAAEAAAyHiJUAAwAAAAEAAAAAkBEAAgAAAAcAAAyPkggAAwAAAAEAFQAAohcAAwAAAAEAAAAAmgAAAgAAAAwAAAyWAAAAAAAAAKkAAABkeyJtaXJyb3IiOmZhbHNlLCJzZW5zb3JUeXBlIjoicmVhciIsIkhkciI6Im9mZiIsIk9wTW9kZSI6MzY4NjgsInNtYWxsUGljdHVyZSI6ZmFsc2UsIkFJU2NlbmUiOjAsImZpbHRlcklkIjo2NjA0OCwiem9vbU11bHRpcGxlIjoxfQAAAAAAAAAABgAAAKkAAABkMjAyMzowODozMSAxMToxMzoyNAAADTlxHc1lACswNTozMAAAAAC0AAAAZJFX+v06j5KTFKYjh5GLFWffo0E5K+YeFdulS+KnFbugywRA87BufDrNVDv11koHJRM17nbHlJBv44FjF28mGB9uaRhqywR8+xD3ealRwIaryRF8n+yFwced+yzVJTlUFvIGPbJ+IRavgeKxA4bjioXVZYUBuIW5JyQw/uWQhlv2eJCBPBSSqoFunM8jeWV+P0bNdSJNlJD9vPM+wIgzWbS+xl6pOY1hOwmpBM0Vq3zrHQ892L6X/9G3Qvu2eBqL0YMmc2dXK32AE8LWTAYxdiuVgypFcrEqQR0DPku3G+N9QWoEav3c/jE8896ZDe/VJjp2irWcK88g+S+tSlWc8Sq1UyTmbcarRbSUYOAAdP/pjoVBNNJvZ0hCIn94eLsvDLqsLsHfZOMhttN88DURgZWl9uwzKMfAhAY0ap0D8xXFc9Z6KhJW8sHl1HnlGkC2B5jj+ySFaPv86629uQ2RKm737Vgov5JmHFFc3+Nc0JqSk+uTQHoktB/Th634oD+etxQVIztDq8ekK7FTaVfue5gZCEzfdsMiBqs/vV56xyUqrPWJIuGsR9Y9AEWdFsJh4NZmNalEvGbKXp2ZSotKwkghL21S1QlD...[20750357 bytes truncated]"
+    },
+    {
+      "id": "a78c",
+      "name": "tamil",
+      "email": "tamilanbu423@srishakthi.ac.in",
+      "password": "123",
+      "confirmPassword": "123",
+      "department": "CSE",
+      "role": "student",
+      "createdAt": "2026-01-05T18:23:59.840Z"
+    },
+    {
+      "id": "15cb",
+      "name": "Revolt",
+      "email": "san9042jay@srishakthi.ac.in",
+      "password": "123",
+      "department": "IT",
+      "role": "student",
+      "createdAt": "2026-01-06T05:40:08.176Z"
+    },
+    {
+      "id": "9fba",
+      "name": "Sanjay S",
+      "email": "sanjayss23it@srishakthi.ac.in",
+      "password": "123",
+      "department": "IT",
+      "role": "student",
+      "createdAt": "2026-01-06T12:05:42.266Z"
+    },
+    {
+      "id": "aa7a",
+      "name": "Ram",
+      "email": "ram23it@srishakthi.ac.in",
+      "password": "12345",
+      "department": "FT",
+      "role": "student",
+      "createdAt": "2026-01-06T15:41:57.118Z"
+    },
+    {
+      "id": "2acb",
+      "name": "Ravi ",
+      "email": "ravi23it@srishakthi.ac.in",
+      "password": "123",
+      "department": "FT",
+      "role": "officer",
+      "createdAt": "2026-01-06T15:47:21.867Z"
+    }
+  ],
+  "studentProfiles": [
+    {
+      "id": "1",
+      "userId": "8302",
+      "personalInfo": {
+        "name": "SANJAY S",
+        "rollNumber": "21UIT001",
+        "email": "san9042jay@gmail.com",
+        "phone": "+91 90420 20357",
+        "dateOfBirth": "2003-05-15",
+        "gender": "Male",
+        "department": "Computer Science and Engineering",
+        "batch": "2021-2025",
+        "address": "Salem, Tamil Nadu",
+        "avatar": null
+      },
+      "academicInfo": {
+        "tenthPercentage": 92,
+        "twelfthPercentage": 88,
+        "currentCGPA": 8.5,
+        "backlogs": 0,
+        "standingArrears": 0,
+        "graduationYear": 2025
+      },
+      "skills": {
+        "technical": [
+          "React",
+          "Node.js",
+          "Python",
+          "Java",
+          "SQL"
+        ],
+        "softSkills": [
+          "Communication",
+          "Teamwork",
+          "Problem Solving"
+        ],
+        "languages": [
+          "English",
+          "Tamil",
+          "Hindi"
+        ]
+      },
+      "experience": [
+        {
+          "id": "1",
+          "company": "Tech Solutions",
+          "role": "Web Developer Intern",
+          "duration": "3 months",
+          "description": "Developed web applications using React and Node.js"
+        }
+      ],
+      "resumes": [
+        {
+          "id": "1",
+          "name": "Resume_Sanjay.pdf",
+          "url": "/resumes/Resume_Sanjay.pdf",
+          "uploadDate": "2026-01-05T16:41:09.754Z",
+          "isDefault": true
+        }
+      ],
+      "achievements": [
+        {
+          "id": "1",
+          "title": "First Prize in Coding Competition",
+          "description": "Won first prize in inter-college coding competition",
+          "date": "2024-03-15"
+        }
+      ],
+      "createdAt": "2026-01-05T16:41:09.754Z",
+      "updatedAt": "2026-01-05T16:41:09.754Z"
+    },
+    {
+      "id": "2",
+      "userId": "a78c",
+      "personalInfo": {
+        "name": "Tamil Anbu",
+        "rollNumber": "21UCS002",
+        "email": "tamilanbu423@srishakthi.ac.in",
+        "phone": "+91 98765 43210",
+        "dateOfBirth": "2003-08-20",
+        "gender": "Male",
+        "department": "Computer Science and Engineering",
+        "batch": "2021-2025",
+        "address": "Coimbatore, Tamil Nadu",
+        "avatar": null
+      },
+      "academicInfo": {
+        "tenthPercentage": 89,
+        "twelfthPercentage": 85,
+        "currentCGPA": 8.2,
+        "backlogs": 0,
+        "standingArrears": 0,
+        "graduationYear": 2025
+      },
+      "skills": {
+        "technical": [
+          "Python",
+          "Machine Learning",
+          "Data Science",
+          "TensorFlow",
+          "React"
+        ],
+        "softSkills": [
+          "Leadership",
+          "Communication",
+          "Analytical Thinking"
+        ],
+        "languages": [
+          "English",
+          "Tamil"
+        ]
+      },
+      "experience": [
+        {
+          "id": "2",
+          "company": "AI Research Lab",
+          "role": "ML Intern",
+          "duration": "2 months",
+          "description": "Worked on machine learning model development"
+        }
+      ],
+      "resumes": [
+        {
+          "id": "2",
+          "name": "Resume_Tamil.pdf",
+          "url": "/resumes/Resume_Tamil.pdf",
+          "uploadDate": "2026-01-05T18:23:59.840Z",
+          "isDefault": true
+        }
+      ],
+      "achievements": [
+        {
+          "id": "2",
+          "title": "Best Project Award",
+          "description": "Won best project award for ML project",
+          "date": "2024-05-20"
+        }
+      ],
+      "createdAt": "2026-01-05T18:23:59.840Z",
+      "updatedAt": "2026-01-05T18:23:59.840Z"
+    },
+    {
+      "id": "3",
+      "userId": "15cb",
+      "personalInfo": {
+        "name": "Revolt Kumar",
+        "rollNumber": "21UIT003",
+        "email": "san9042jay@srishakthi.ac.in",
+        "phone": "+91 91234 56789",
+        "dateOfBirth": "2003-12-10",
+        "gender": "Male",
+        "department": "Information Technology",
+        "batch": "2021-2025",
+        "address": "Erode, Tamil Nadu",
+        "avatar": null
+      },
+      "academicInfo": {
+        "tenthPercentage": 90,
+        "twelfthPercentage": 86,
+        "currentCGPA": 7.8,
+        "backlogs": 1,
+        "standingArrears": 0,
+        "graduationYear": 2025
+      },
+      "skills": {
+        "technical": [
+          "Java",
+          "Spring Boot",
+          "Angular",
+          "MySQL",
+          "Docker"
+        ],
+        "softSkills": [
+          "Team Management",
+          "Problem Solving",
+          "Communication"
+        ],
+        "languages": [
+          "English",
+          "Tamil",
+          "Telugu"
+        ]
+      },
+      "experience": [
+        {
+          "id": "3",
+          "company": "Software Solutions",
+          "role": "Java Developer Intern",
+          "duration": "4 months",
+          "description": "Developed enterprise applications using Spring Boot"
+        }
+      ],
+      "resumes": [
+        {
+          "id": "3",
+          "name": "Resume_Revolt.pdf",
+          "url": "/resumes/Resume_Revolt.pdf",
+          "uploadDate": "2026-01-06T05:40:08.176Z",
+          "isDefault": true
+        }
+      ],
+      "achievements": [
+        {
+          "id": "3",
+          "title": "Hackathon Winner",
+          "description": "Won 2nd prize in state level hackathon",
+          "date": "2024-02-15"
+        }
+      ],
+      "createdAt": "2026-01-06T05:40:08.176Z",
+      "updatedAt": "2026-01-06T05:40:08.176Z"
+    },
+    {
+      "id": "4",
+      "userId": "9fba",
+      "personalInfo": {
+        "name": "Sanjay S",
+        "rollNumber": "21UIT004",
+        "email": "sanjayss23it@srishakthi.ac.in",
+        "phone": "+91 99876 54321",
+        "dateOfBirth": "2003-06-25",
+        "gender": "Male",
+        "department": "Information Technology",
+        "batch": "2021-2025",
+        "address": "Tirupur, Tamil Nadu",
+        "avatar": null
+      },
+      "academicInfo": {
+        "tenthPercentage": 91,
+        "twelfthPercentage": 87,
+        "currentCGPA": 8,
+        "backlogs": 0,
+        "standingArrears": 0,
+        "graduationYear": 2025
+      },
+      "skills": {
+        "technical": [
+          "React",
+          "Node.js",
+          "MongoDB",
+          "Express",
+          "AWS"
+        ],
+        "softSkills": [
+          "Communication",
+          "Leadership",
+          "Time Management"
+        ],
+        "languages": [
+          "English",
+          "Tamil",
+          "Hindi"
+        ]
+      },
+      "experience": [
+        {
+          "id": "4",
+          "company": "Cloud Tech",
+          "role": "Full Stack Developer Intern",
+          "duration": "3 months",
+          "description": "Worked on cloud-based web applications"
+        }
+      ],
+      "resumes": [
+        {
+          "id": "4",
+          "name": "Resume_SanjaySS.pdf",
+          "url": "/resumes/Resume_SanjaySS.pdf",
+          "uploadDate": "2026-01-06T12:05:42.266Z",
+          "isDefault": true
+        }
+      ],
+      "achievements": [
+        {
+          "id": "4",
+          "title": "Academic Excellence",
+          "description": "Received academic excellence award",
+          "date": "2024-07-10"
+        }
+      ],
+      "createdAt": "2026-01-06T12:05:42.266Z",
+      "updatedAt": "2026-01-06T12:05:42.266Z"
+    },
+    {
+      "id": "5",
+      "userId": "student5",
+      "personalInfo": {
+        "name": "Priya Lakshmi",
+        "rollNumber": "21UCE005",
+        "email": "priya.l@srishakthi.ac.in",
+        "phone": "+91 87654 32109",
+        "dateOfBirth": "2003-09-18",
+        "gender": "Female",
+        "department": "Computer Science and Engineering",
+        "batch": "2021-2025",
+        "address": "Coimbatore, Tamil Nadu",
+        "avatar": null
+      },
+      "academicInfo": {
+        "tenthPercentage": 94,
+        "twelfthPercentage": 90,
+        "currentCGPA": 8.8,
+        "backlogs": 0,
+        "standingArrears": 0,
+        "graduationYear": 2025
+      },
+      "skills": {
+        "technical": [
+          "Python",
+          "Data Structures",
+          "Algorithms",
+          "Machine Learning",
+          "SQL"
+        ],
+        "softSkills": [
+          "Public Speaking",
+          "Leadership",
+          "Team Work"
+        ],
+        "languages": [
+          "English",
+          "Tamil",
+          "Sanskrit"
+        ]
+      },
+      "experience": [
+        {
+          "id": "5",
+          "company": "Data Analytics Co",
+          "role": "Data Science Intern",
+          "duration": "2 months",
+          "description": "Worked on data analysis and visualization projects"
+        }
+      ],
+      "resumes": [
+        {
+          "id": "5",
+          "name": "Resume_Priya.pdf",
+          "url": "/resumes/Resume_Priya.pdf",
+          "uploadDate": "2026-01-06T14:30:00.000Z",
+          "isDefault": true
+        }
+      ],
+      "achievements": [
+        {
+          "id": "5",
+          "title": "Top Performer",
+          "description": "Top performer in internship program",
+          "date": "2024-08-15"
+        }
+      ],
+      "createdAt": "2026-01-06T14:30:00.000Z",
+      "updatedAt": "2026-01-06T14:30:00.000Z"
+    }
+  ],
+  "companyDrives": [
+    {
+      "id": "1",
+      "company": {
+        "name": "CloudNine Systems",
+        "logo": "",
+        "website": "https://cloudnine.com",
+        "industry": "Software Development",
+        "description": "Leading software development company specializing in cloud solutions",
+        "size": "1000-5000",
+        "headquarters": "Bangalore, India"
+      },
+      "drive": {
+        "title": "Campus Recruitment Drive 2024",
+        "description": "Hiring talented graduates for multiple positions",
+        "type": "campus",
+        "status": "registration_open",
+        "registrationDeadline": "2026-02-15T23:59:59.000Z",
+        "driveDate": "2026-02-20T09:00:00.000Z",
+        "venue": "Sri Shakthi Institute of Engineering and Technology",
+        "mode": "offline"
+      },
+      "positions": [
+        {
+          "id": "1",
+          "title": "Software Engineer",
+          "department": [
+            "Computer Science",
+            "Information Technology"
+          ],
+          "package": {
+            "min": 600000,
+            "max": 800000,
+            "currency": "₹",
+            "ctcOrGross": "CTC"
+          },
+          "eligibility": {
+            "minCGPA": 7.5,
+            "maxBacklogs": 2,
+            "standingArrears": false,
+            "passoutYear": [
+              2025,
+              2024
+            ],
+            "departments": [
+              "Computer Science and Engineering",
+              "Information Technology"
+            ],
+            "skills": [
+              "React",
+              "Node.js",
+              "Python"
+            ]
+          },
+          "locations": [
+            "Bangalore",
+            "Chennai"
+          ],
+          "bond": {
+            "period": 24,
+            "amount": 100000
+          },
+          "selectionProcess": [
+            "Aptitude Test",
+            "Technical Interview",
+            "HR Interview"
+          ],
+          "positionsAvailable": 20,
+          "registered": 5,
+          "shortlisted": 0,
+          "selected": 0
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "Resume",
+          "ID Card",
+          "Academic Certificates"
+        ],
+        "dressCode": "Formal Attire",
+        "instructions": [
+          "Report 30 minutes before scheduled time",
+          "Bring original documents for verification"
+        ]
+      },
+      "contacts": {
+        "hrName": "Rajesh Kumar",
+        "hrEmail": "hr@cloudnine.com",
+        "hrPhone": "+91 98765 43210",
+        "coordinatorName": "Prof. Suresh",
+        "coordinatorPhone": "+91 90420 20357"
+      },
+      "timeline": [
+        {
+          "round": "Registration",
+          "date": "2026-01-15T09:00:00.000Z",
+          "description": "Registration opens for all eligible students",
+          "status": "completed"
+        },
+        {
+          "round": "Aptitude Test",
+          "date": "2026-02-20T09:00:00.000Z",
+          "description": "Online aptitude test for all registered candidates",
+          "status": "upcoming"
+        }
+      ],
+      "analytics": {
+        "totalViews": 150,
+        "totalRegistrations": 5,
+        "eligibilityCheckRate": 85,
+        "registrationConversionRate": 60,
+        "attendanceRate": 95,
+        "selectionRate": 25
+      },
+      "createdAt": "2026-01-05T16:41:09.754Z",
+      "updatedAt": "2026-01-05T16:41:09.754Z"
+    },
+    {
+      "id": "2",
+      "company": {
+        "name": "FinServe Technologies",
+        "logo": "",
+        "website": "https://finserve.com",
+        "industry": "Financial Technology",
+        "description": "Leading fintech company providing innovative financial solutions",
+        "size": "500-1000",
+        "headquarters": "Mumbai, India"
+      },
+      "drive": {
+        "title": "FinTech Campus Drive",
+        "description": "Hiring for software and business analyst roles",
+        "type": "campus",
+        "status": "registration_open",
+        "registrationDeadline": "2026-02-20T23:59:59.000Z",
+        "driveDate": "2026-02-25T09:00:00.000Z",
+        "venue": "Sri Shakthi Institute of Engineering and Technology",
+        "mode": "hybrid"
+      },
+      "positions": [
+        {
+          "id": "2",
+          "title": "Software Developer",
+          "department": [
+            "Computer Science",
+            "Information Technology"
+          ],
+          "package": {
+            "min": 700000,
+            "max": 900000,
+            "currency": "₹",
+            "ctcOrGross": "CTC"
+          },
+          "eligibility": {
+            "minCGPA": 8,
+            "maxBacklogs": 1,
+            "standingArrears": false,
+            "passoutYear": [
+              2025,
+              2024
+            ],
+            "departments": [
+              "Computer Science and Engineering",
+              "Information Technology"
+            ],
+            "skills": [
+              "Java",
+              "Python",
+              "SQL"
+            ]
+          },
+          "locations": [
+            "Mumbai",
+            "Pune"
+          ],
+          "bond": {
+            "period": 18,
+            "amount": 75000
+          },
+          "selectionProcess": [
+            "Online Test",
+            "Technical Interview",
+            "HR Interview"
+          ],
+          "positionsAvailable": 15,
+          "registered": 3,
+          "shortlisted": 0,
+          "selected": 0
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "Resume",
+          "ID Card",
+          "Academic Certificates"
+        ],
+        "dressCode": "Business Formal",
+        "instructions": [
+          "Online test link will be sent via email",
+          "Bring laptop for technical rounds"
+        ]
+      },
+      "contacts": {
+        "hrName": "Priya Sharma",
+        "hrEmail": "careers@finserve.com",
+        "hrPhone": "+91 98765 54321",
+        "coordinatorName": "Prof. Kumar",
+        "coordinatorPhone": "+91 90420 20358"
+      },
+      "timeline": [
+        {
+          "round": "Registration",
+          "date": "2026-01-10T09:00:00.000Z",
+          "description": "Registration opens for eligible students",
+          "status": "completed"
+        },
+        {
+          "round": "Online Assessment",
+          "date": "2026-02-25T10:00:00.000Z",
+          "description": "Online technical and aptitude assessment",
+          "status": "upcoming"
+        }
+      ],
+      "analytics": {
+        "totalViews": 120,
+        "totalRegistrations": 3,
+        "eligibilityCheckRate": 90,
+        "registrationConversionRate": 70,
+        "attendanceRate": 92,
+        "selectionRate": 30
+      },
+      "createdAt": "2026-01-05T16:42:06.815Z",
+      "updatedAt": "2026-01-05T16:42:06.815Z"
+    }
+  ],
+  "trainingSessions": [
+    {
+      "id": "1",
+      "title": "Aptitude Training - Batch A",
+      "description": "Comprehensive aptitude training for placement preparation",
+      "category": "aptitude",
+      "type": "online",
+      "mode": "online",
+      "trainer": {
+        "id": "1",
+        "name": "Dr. Ramesh",
+        "email": "ramesh@srishakthi.ac.in",
+        "phone": "+91 90420 20357",
+        "expertise": [
+          "Aptitude",
+          "Reasoning",
+          "Quantitative Analysis"
+        ]
+      },
+      "schedule": {
+        "startDate": "2026-01-10T09:00:00.000Z",
+        "endDate": "2026-02-10T18:00:00.000Z",
+        "days": [
+          "Monday",
+          "Wednesday",
+          "Friday"
+        ],
+        "time": "09:00 AM - 11:00 AM"
+      },
+      "venue": "Online - Zoom",
+      "materials": [
+        "Aptitude Questions PDF",
+        "Practice Tests",
+        "Video Lectures"
+      ],
+      "attendance": [
+        {
+          "studentId": "8302",
+          "date": "2026-01-10T09:00:00.000Z",
+          "status": "present"
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-01-05T16:45:31.740Z",
+      "updatedAt": "2026-01-05T16:45:31.740Z"
+    }
+  ],
+  "resumes": [
+    {
+      "id": "1",
+      "userId": "8302",
+      "name": "Resume_Sanjay.pdf",
+      "url": "/resumes/Resume_Sanjay.pdf",
+      "uploadDate": "2026-01-05T16:41:09.754Z",
+      "atsScore": 85,
+      "isDefault": true,
+      "fileSize": 204800,
+      "fileType": "application/pdf"
+    }
+  ],
+  "contactQueries": [
+    {
+      "id": "1",
+      "query_id": "TKT-123456",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "phone": "+91 98765 43210",
+      "user_type": "student",
+      "subject": "placement_query",
+      "message": "I need help with the registration process for upcoming drives.",
+      "status": "open",
+      "created_at": "2026-01-05T16:41:09.754Z"
+    }
+  ],
+  "tests": [
+    {
+      "id": "1",
+      "title": "Aptitude Mock Test 1",
+      "description": "Practice aptitude test with quantitative and reasoning sections",
+      "category": "aptitude",
+      "type": "practice",
+      "duration": 60,
+      "totalQuestions": 50,
+      "totalPoints": 100,
+      "questions": [
+        {
+          "id": "1",
+          "type": "multiple_choice",
+          "category": "quantitative",
+          "difficulty": "medium",
+          "question": "If 20% of a number is 60, what is the number?",
+          "options": [
+            "200",
+            "300",
+            "400",
+            "500"
+          ],
+          "correctAnswer": "300",
+          "explanation": "Let the number be x. 20% of x = 60, so 0.2x = 60, x = 60/0.2 = 300",
+          "points": 2,
+          "timeLimit": 60
+        }
+      ],
+      "instructions": [
+        "Read each question carefully",
+        "Manage your time effectively",
+        "No negative marking"
+      ],
+      "isActive": true,
+      "createdAt": "2026-01-05T16:45:31.740Z",
+      "createdBy": "0d91"
+    }
+  ],
+  "testResults": [
+    {
+      "id": "1",
+      "testId": "1",
+      "studentId": "8302",
+      "studentName": "SANJAY S",
+      "score": 85,
+      "totalPoints": 100,
+      "percentage": 85,
+      "correctAnswers": 42,
+      "wrongAnswers": 8,
+      "skippedQuestions": 0,
+      "timeTaken": 2700,
+      "startedAt": "2026-01-05T16:45:31.740Z",
+      "completedAt": "2026-01-05T17:30:31.740Z",
+      "answers": [
+        {
+          "questionId": "1",
+          "answer": "300",
+          "isCorrect": true,
+          "timeSpent": 45
+        }
+      ],
+      "categoryScores": {
+        "quantitative": 88,
+        "reasoning": 82
+      },
+      "rank": 1,
+      "percentile": 95
+    }
+  ],
+  "driveRegistrations": [
+    {
+      "id": "1",
+      "driveId": "1",
+      "positionId": "1",
+      "studentId": "8302",
+      "registrationId": "REG-1641426543",
+      "status": "confirmed",
+      "registeredAt": "2026-01-05T16:41:09.754Z",
+      "confirmedAt": "2026-01-05T16:41:09.754Z",
+      "resumeId": "1",
+      "eligibilityCheck": {
+        "cgpaValid": true,
+        "backlogValid": true,
+        "departmentValid": true,
+        "batchValid": true,
+        "trainingValid": true,
+        "overallValid": true
+      }
+    },
+    {
+      "id": "2",
+      "driveId": "1",
+      "positionId": "1",
+      "studentId": "a78c",
+      "registrationId": "REG-1641426544",
+      "status": "confirmed",
+      "registeredAt": "2026-01-05T18:30:00.000Z",
+      "confirmedAt": "2026-01-05T18:30:00.000Z",
+      "resumeId": "2",
+      "eligibilityCheck": {
+        "cgpaValid": true,
+        "backlogValid": true,
+        "departmentValid": true,
+        "batchValid": true,
+        "trainingValid": true,
+        "overallValid": true
+      }
+    },
+    {
+      "id": "3",
+      "driveId": "2",
+      "positionId": "2",
+      "studentId": "15cb",
+      "registrationId": "REG-1641426545",
+      "status": "confirmed",
+      "registeredAt": "2026-01-06T09:15:00.000Z",
+      "confirmedAt": "2026-01-06T09:15:00.000Z",
+      "resumeId": "3",
+      "eligibilityCheck": {
+        "cgpaValid": true,
+        "backlogValid": true,
+        "departmentValid": true,
+        "batchValid": true,
+        "trainingValid": true,
+        "overallValid": true
+      }
+    },
+    {
+      "id": "4",
+      "driveId": "1",
+      "positionId": "1",
+      "studentId": "9fba",
+      "registrationId": "REG-1641426546",
+      "status": "pending",
+      "registeredAt": "2026-01-06T11:30:00.000Z",
+      "confirmedAt": null,
+      "resumeId": "4",
+      "eligibilityCheck": {
+        "cgpaValid": true,
+        "backlogValid": true,
+        "departmentValid": true,
+        "batchValid": true,
+        "trainingValid": true,
+        "overallValid": true
+      }
+    },
+    {
+      "id": "5",
+      "driveId": "2",
+      "positionId": "2",
+      "studentId": "student5",
+      "registrationId": "REG-1641426547",
+      "status": "confirmed",
+      "registeredAt": "2026-01-06T14:45:00.000Z",
+      "confirmedAt": "2026-01-06T14:45:00.000Z",
+      "resumeId": "5",
+      "eligibilityCheck": {
+        "cgpaValid": true,
+        "backlogValid": true,
+        "departmentValid": true,
+        "batchValid": true,
+        "trainingValid": true,
+        "overallValid": true
+      }
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "userId": "8302",
+      "title": "New Company Drive - CloudNine Systems",
+      "message": "CloudNine Systems is hiring Software Engineers. Registration deadline is Feb 15, 2026.",
+      "type": "drive_alert",
+      "priority": "high",
+      "isRead": false,
+      "createdAt": "2026-01-05T16:41:09.754Z"
+    }
+  ],
+  "systemConfigs": [
+    {
+      "id": "1",
+      "category": "placement_settings",
+      "settings": {
+        "max_drives_per_student": 5,
+        "min_cgpa_for_placement": 6.5,
+        "max_backlogs_allowed": 2,
+        "registration_reminder_days": 3
+      },
+      "lastUpdated": "2026-01-05T16:41:09.754Z",
+      "updatedBy": "0d91"
+    }
+  ],
+  "bulkOperations": [
+    {
+      "id": "1",
+      "type": "student_upload",
+      "status": "completed",
+      "progress": 100,
+      "totalRecords": 50,
+      "processedRecords": 50,
+      "errors": [],
+      "createdAt": "2026-01-05T16:41:09.754Z",
+      "completedAt": "2026-01-05T16:45:31.740Z"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "1",
+      "userId": "8302",
+      "userName": "SANJAY S",
+      "userRole": "student",
+      "action": "login",
+      "resource": "system",
+      "resourceId": "system",
+      "timestamp": "2026-01-05T16:41:09.754Z",
+      "ipAddress": "192.168.1.100",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+      "status": "success"
+    }
+  ],
+  "leaderboards": [
+    {
+      "testId": "1",
+      "testTitle": "Aptitude Mock Test 1",
+      "entries": [
+        {
+          "rank": 1,
+          "studentId": "8302",
+          "studentName": "SANJAY S",
+          "score": 85,
+          "percentage": 85,
+          "timeTaken": 2700,
+          "completedAt": "2026-01-05T17:30:31.740Z"
+        }
+      ],
+      "totalParticipants": 25,
+      "id": "f822"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "1",
+      "studentId": "8302",
+      "studentName": "SANJAY S",
+      "eventId": "1",
+      "eventTitle": "Aptitude Training - Batch A",
+      "eventType": "training",
+      "date": "2026-01-06",
+      "status": "present",
+      "markedBy": "0d91"
+    },
+    {
+      "id": "2",
+      "studentId": "a78c",
+      "studentName": "Tamil Anbu",
+      "eventId": "1",
+      "eventTitle": "Aptitude Training - Batch A",
+      "eventType": "training",
+      "date": "2026-01-06",
+      "status": "present",
+      "markedBy": "0d91"
+    },
+    {
+      "id": "3",
+      "studentId": "15cb",
+      "studentName": "Revolt Kumar",
+      "eventId": "1",
+      "eventTitle": "Aptitude Training - Batch A",
+      "eventType": "training",
+      "date": "2026-01-06",
+      "status": "absent",
+      "markedBy": "0d91"
+    },
+    {
+      "id": "4",
+      "studentId": "9fba",
+      "studentName": "Sanjay S",
+      "eventId": "1",
+      "eventTitle": "Aptitude Training - Batch A",
+      "eventType": "training",
+      "date": "2026-01-06",
+      "status": "present",
+      "markedBy": "0d91"
+    },
+    {
+      "id": "5",
+      "studentId": "student5",
+      "studentName": "Priya Lakshmi",
+      "eventId": "1",
+      "eventTitle": "Aptitude Training - Batch A",
+      "eventType": "training",
+      "date": "2026-01-06",
+      "status": "present",
+      "markedBy": "0d91"
+    },
+    {
+      "id": "6",
+      "studentId": "8302",
+      "studentName": "SANJAY S",
+      "eventId": "1",
+      "eventTitle": "Aptitude Training - Batch A",
+      "eventType": "training",
+      "date": "2026-01-08",
+      "status": "present",
+      "markedBy": "0d91"
+    },
+    {
+      "id": "7",
+      "studentId": "a78c",
+      "studentName": "Tamil Anbu",
+      "eventId": "1",
+      "eventTitle": "Aptitude Training - Batch A",
+      "eventType": "training",
+      "date": "2026-01-08",
+      "status": "late",
+      "markedBy": "0d91"
+    },
+    {
+      "id": "8",
+      "studentId": "15cb",
+      "studentName": "Revolt Kumar",
+      "eventId": "1",
+      "eventTitle": "Aptitude Training - Batch A",
+      "eventType": "training",
+      "date": "2026-01-08",
+      "status": "present",
+      "markedBy": "0d91"
+    },
+    {
+      "id": "9",
+      "studentId": "9fba",
+      "studentName": "Sanjay S",
+      "eventId": "1",
+      "eventTitle": "Aptitude Training - Batch A",
+      "eventType": "training",
+      "date": "2026-01-08",
+      "status": "absent",
+      "markedBy": "0d91"
+    },
+    {
+      "id": "10",
+      "studentId": "student5",
+      "studentName": "Priya Lakshmi",
+      "eventId": "1",
+      "eventTitle": "Aptitude Training - Batch A",
+      "eventType": "training",
+      "date": "2026-01-08",
+      "status": "present",
+      "markedBy": "0d91"
+    },
+    {
+      "id": "3cb4",
+      "date": "2026-01-06",
+      "records": [
+        {
+          "studentId": "8302",
+          "studentName": "SANJAY S",
+          "date": "2026-01-06",
+          "status": "present",
+          "markedBy": "Ravi ",
+          "markedAt": "2026-01-06T16:55:46.247Z"
+        },
+        {
+          "studentId": "a78c",
+          "studentName": "Tamil Anbu",
+          "date": "2026-01-06",
+          "status": "absent",
+          "markedBy": "Ravi ",
+          "markedAt": "2026-01-06T16:55:46.247Z"
+        },
+        {
+          "studentId": "15cb",
+          "studentName": "Revolt Kumar",
+          "date": "2026-01-06",
+          "status": "od",
+          "markedBy": "Ravi ",
+          "markedAt": "2026-01-06T16:55:46.247Z"
+        },
+        {
+          "studentId": "9fba",
+          "studentName": "Sanjay S",
+          "date": "2026-01-06",
+          "status": "present",
+          "markedBy": "Ravi ",
+          "markedAt": "2026-01-06T16:55:46.247Z"
+        },
+        {
+          "studentId": "student5",
+          "studentName": "Priya Lakshmi",
+          "date": "2026-01-06",
+          "status": "present",
+          "markedBy": "Ravi ",
+          "markedAt": "2026-01-06T16:55:46.247Z"
+        }
+      ]
+    },
+    {
+      "id": "0823",
+      "date": "2026-01-06",
+      "records": [
+        {
+          "studentId": "8302",
+          "studentName": "SANJAY S",
+          "date": "2026-01-06",
+          "status": "present",
+          "markedBy": "Ravi ",
+          "markedAt": "2026-01-06T16:55:50.014Z"
+        },
+        {
+          "studentId": "a78c",
+          "studentName": "Tamil Anbu",
+          "date": "2026-01-06",
+          "status": "absent",
+          "markedBy": "Ravi ",
+          "markedAt": "2026-01-06T16:55:50.014Z"
+        },
+        {
+          "studentId": "15cb",
+          "studentName": "Revolt Kumar",
+          "date": "2026-01-06",
+          "status": "od",
+          "markedBy": "Ravi ",
+          "markedAt": "2026-01-06T16:55:50.014Z"
+        },
+        {
+          "studentId": "9fba",
+          "studentName": "Sanjay S",
+          "date": "2026-01-06",
+          "status": "present",
+          "markedBy": "Ravi ",
+          "markedAt": "2026-01-06T16:55:50.014Z"
+        },
+        {
+          "studentId": "student5",
+          "studentName": "Priya Lakshmi",
+          "date": "2026-01-06",
+          "status": "present",
+          "markedBy": "Ravi ",
+          "markedAt": "2026-01-06T16:55:50.014Z"
+        }
+      ]
+    }
+  ]
+}

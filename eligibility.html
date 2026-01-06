@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eligibility Check - Placement Training System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: ["class"],
+            theme: {
+                container: { center: true, padding: "2rem", screens: { "2xl": "1400px" } },
+                extend: {
+                    colors: {
+                        border: "hsl(214 32% 91%)",
+                        input: "hsl(214 32% 91%)",
+                        ring: "hsl(222 47% 20%)",
+                        background: "hsl(210 20% 98%)",
+                        foreground: "hsl(222 47% 11%)",
+                        primary: { DEFAULT: "hsl(222 47% 20%)", foreground: "hsl(210 40% 98%)" },
+                        secondary: { DEFAULT: "hsl(180 45% 45%)", foreground: "hsl(0 0% 100%)" },
+                        destructive: { DEFAULT: "hsl(0 84% 60%)", foreground: "hsl(210 40% 98%)" },
+                        muted: { DEFAULT: "hsl(210 20% 94%)", foreground: "hsl(215 16% 47%)" },
+                        accent: { DEFAULT: "hsl(38 92% 50%)", foreground: "hsl(222 47% 11%)" },
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-background text-foreground min-h-screen flex flex-col">
+
+    <!-- Header will be injected by main.js -->
+
+    <main class="flex-1 py-12">
+        <div class="container max-w-4xl">
+            <div class="mb-10">
+                <h1 class="text-4xl font-extrabold font-display tracking-tight text-foreground">Eligibility Check System
+                </h1>
+                <p class="text-muted-foreground text-lg mt-2 font-medium">Instantly verify if you meet the requirements
+                    for upcoming drives.</p>
+            </div>
+
+            <div class="grid gap-10">
+                <!-- Check Form -->
+                <div class="rounded-xl border border-border bg-card p-10 shadow-card">
+                    <h2 class="text-2xl font-bold font-display mb-8">Validate Credentials</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-3">
+                            <label class="text-sm font-bold text-foreground">Student ID</label>
+                            <input id="studentId" type="text" placeholder="e.g. 21UIT001"
+                                class="flex h-12 w-full rounded-lg border border-input bg-background px-4 py-2 text-sm shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary">
+                        </div>
+                        <div class="space-y-3">
+                            <label class="text-sm font-bold text-foreground">Target Drive</label>
+                            <select
+                                class="flex h-12 w-full items-center justify-between rounded-lg border border-input bg-background px-4 py-2 text-sm shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary">
+                                <option value="1">CloudNine Systems - Software Engineer</option>
+                                <option value="2">FinServe Technologies - Data Analyst</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="check-btn"
+                        class="mt-8 w-full inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 shadow-xl">
+                        Check Eligibility
+                    </button>
+                </div>
+
+                <!-- Result Container -->
+                <div id="check-result" class="hidden">
+                    <!-- Dynamic result will be injected here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer will be injected by main.js -->
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/eligibility.js"></script>
+    <script>
+        injectHeader();
+        injectFooter();
+    </script>
+</body>
+
+</html>

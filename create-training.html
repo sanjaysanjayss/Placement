@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Training - Mentor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: ["class"],
+            theme: {
+                container: { center: true, padding: "2rem", screens: { "2xl": "1400px" } },
+                extend: {
+                    colors: {
+                        border: "hsl(214 32% 91%)",
+                        input: "hsl(214 32% 91%)",
+                        ring: "hsl(222 47% 20%)",
+                        background: "hsl(210 20% 98%)",
+                        foreground: "hsl(222 47% 11%)",
+                        primary: { DEFAULT: "hsl(222 47% 20%)", foreground: "hsl(210 40% 98%)" },
+                        secondary: { DEFAULT: "hsl(180 45% 45%)", foreground: "hsl(0 0% 100%)" },
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-background text-foreground min-h-screen flex flex-col">
+    <main class="flex-1 py-12">
+        <div class="container mx-auto max-w-2xl px-4">
+            <div class="rounded-xl border border-border bg-card p-8 shadow-card">
+                <h1 class="mb-6 font-display text-3xl font-bold">Create Training Program</h1>
+                <p class="mb-8 text-muted-foreground text-sm">Design a new training program for placement preparation.
+                </p>
+
+                <form id="create-training-form" class="space-y-6">
+                    <div>
+                        <label class="mb-2 block text-sm font-medium">Program Title</label>
+                        <input type="text" id="title" required placeholder="e.g. Full Stack Development Bootcamp"
+                            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                    </div>
+                    <div>
+                        <label class="mb-2 block text-sm font-medium">Category</label>
+                        <select id="category" required
+                            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                            <option value="Aptitude">Aptitude</option>
+                            <option value="Technical">Technical</option>
+                            <option value="Soft Skills">Soft Skills</option>
+                            <option value="Interview">Interview Prep</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="mb-2 block text-sm font-medium">Description</label>
+                        <textarea id="description" rows="3" required placeholder="Outline the training content"
+                            class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"></textarea>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="mb-2 block text-sm font-medium">Duration</label>
+                            <input type="text" id="duration" required placeholder="e.g. 4 Weeks"
+                                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                        </div>
+                        <div>
+                            <label class="mb-2 block text-sm font-medium">Start Date</label>
+                            <input type="date" id="startDate" required
+                                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <button type="submit"
+                            class="bg-secondary text-secondary-foreground hover:bg-secondary/90 h-10 px-6 rounded-md font-medium transition-colors">
+                            Launch Training
+                        </button>
+                        <a href="index.html"
+                            class="border border-input bg-background hover:bg-accent h-10 px-6 rounded-md font-medium transition-colors inline-flex items-center">
+                            Cancel
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Existing Training Programs -->
+            <div id="existing-trainings" class="mt-8 rounded-xl border border-border bg-card p-8 shadow-card">
+                <h2 class="mb-4 font-display text-2xl font-bold">Your Created Training Programs</h2>
+                <p class="mb-6 text-muted-foreground text-sm">Manage all training programs you've created</p>
+                <div id="trainings-list" class="space-y-4">
+                    <!-- Trainings will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        injectHeader();
+        injectFooter();
+
+        // Load and display existing trainings
+        function loadExistingTrainings() {
+            const existingItems = JSON.parse(localStorage.getItem('custom_trainings')) || [];
+            const trainingsList = document.getElementById('trainings-list');
+
+            if (existingItems.length === 0) {
+                trainingsList.innerHTML = `
+                    <div class="text-center py-8 text-muted-foreground">
+                        <i data-lucide="inbox" class="h-12 w-12 mx-auto mb-3 opacity-50"></i>
+                        <p>No training programs created yet</p>
+                    </div>
+                `;
+                lucide.createIcons();
+                return;
+            }
+
+            trainingsList.innerHTML = existingItems.map(item => `
+                <div id="training-${item.id}" class="p-4 rounded-lg border border-border bg-background hover:bg-muted/50 transition-colors">
+                    <div class="view-mode-${item.id}">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <h3 class="font-semibold text-lg">${item.title}</h3>
+                                    <span class="px-2 py-1 text-xs rounded-full bg-secondary/10 text-secondary">${item.category}</span>
+                                </div>
+                                <p class="text-sm text-muted-foreground mb-2">${item.description}</p>
+                                <div class="flex items-center gap-4 text-xs text-muted-foreground">
+                                    <span><i data-lucide="clock" class="h-3 w-3 inline mr-1"></i>${item.duration}</span>
+                                    <span><i data-lucide="calendar" class="h-3 w-3 inline mr-1"></i>${item.startDate}</span>
+                                    <span><i data-lucide="user" class="h-3 w-3 inline mr-1"></i>${item.mentor}</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="editTraining(${item.id})" 
+                                    class="text-blue-600 hover:text-blue-700 hover:bg-blue-50 p-2 rounded-md transition-colors"
+                                    title="Edit this training">
+                                    <i data-lucide="edit" class="h-5 w-5"></i>
+                                </button>
+                                <button onclick="deleteTraining(${item.id})" 
+                                    class="text-red-600 hover:text-red-700 hover:bg-red-50 p-2 rounded-md transition-colors"
+                                    title="Delete this training">
+                                    <i data-lucide="trash-2" class="h-5 w-5"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit-mode-${item.id} hidden">
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Title</label>
+                                <input type="text" id="edit-title-${item.id}" value="${item.title}" 
+                                    class="w-full px-3 py-2 border border-input rounded-md bg-background">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Category</label>
+                                <select id="edit-category-${item.id}" 
+                                    class="w-full px-3 py-2 border border-input rounded-md bg-background">
+                                    <option value="Aptitude" ${item.category === 'Aptitude' ? 'selected' : ''}>Aptitude</option>
+                                    <option value="Technical" ${item.category === 'Technical' ? 'selected' : ''}>Technical</option>
+                                    <option value="Soft Skills" ${item.category === 'Soft Skills' ? 'selected' : ''}>Soft Skills</option>
+                                    <option value="Interview" ${item.category === 'Interview' ? 'selected' : ''}>Interview Prep</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Description</label>
+                                <textarea id="edit-description-${item.id}" rows="2" 
+                                    class="w-full px-3 py-2 border border-input rounded-md bg-background">${item.description}</textarea>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium mb-2">Duration</label>
+                                    <input type="text" id="edit-duration-${item.id}" value="${item.duration}" 
+                                        class="w-full px-3 py-2 border border-input rounded-md bg-background">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium mb-2">Start Date</label>
+                                    <input type="date" id="edit-startDate-${item.id}" value="${item.startDate}" 
+                                        class="w-full px-3 py-2 border border-input rounded-md bg-background">
+                                </div>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="saveTrainingEdit(${item.id})" 
+                                    class="bg-secondary text-secondary-foreground px-4 py-2 rounded-md hover:bg-secondary/90 transition-colors">
+                                    <i data-lucide="save" class="h-4 w-4 inline mr-1"></i>Save
+                                </button>
+                                <button onclick="cancelTrainingEdit(${item.id})" 
+                                    class="border border-input px-4 py-2 rounded-md hover:bg-accent transition-colors">
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            lucide.createIcons();
+        }
+
+        // Edit training function
+        function editTraining(id) {
+            document.querySelector(`.view-mode-${id}`).classList.add('hidden');
+            document.querySelector(`.edit-mode-${id}`).classList.remove('hidden');
+            lucide.createIcons();
+        }
+
+        // Cancel edit
+        function cancelTrainingEdit(id) {
+            document.querySelector(`.view-mode-${id}`).classList.remove('hidden');
+            document.querySelector(`.edit-mode-${id}`).classList.add('hidden');
+        }
+
+        // Save training edit
+        function saveTrainingEdit(id) {
+            const existingItems = JSON.parse(localStorage.getItem('custom_trainings')) || [];
+            const itemIndex = existingItems.findIndex(item => item.id === id);
+
+            if (itemIndex !== -1) {
+                existingItems[itemIndex].title = document.getElementById(`edit-title-${id}`).value;
+                existingItems[itemIndex].category = document.getElementById(`edit-category-${id}`).value;
+                existingItems[itemIndex].description = document.getElementById(`edit-description-${id}`).value;
+                existingItems[itemIndex].duration = document.getElementById(`edit-duration-${id}`).value;
+                existingItems[itemIndex].startDate = document.getElementById(`edit-startDate-${id}`).value;
+
+                localStorage.setItem('custom_trainings', JSON.stringify(existingItems));
+                alert('Training program updated successfully!');
+                loadExistingTrainings();
+            }
+        }
+
+        // Delete training function
+        function deleteTraining(id) {
+            if (!confirm('Are you sure you want to delete this training program? This action cannot be undone.')) {
+                return;
+            }
+
+            const existingItems = JSON.parse(localStorage.getItem('custom_trainings')) || [];
+            const updatedItems = existingItems.filter(item => item.id !== id);
+            localStorage.setItem('custom_trainings', JSON.stringify(updatedItems));
+
+            alert('Training program deleted successfully!');
+            loadExistingTrainings();
+        }
+
+        // Load trainings on page load
+        loadExistingTrainings();
+
+        // Handle form submission
+        document.getElementById('create-training-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const newItem = {
+                id: Date.now(),
+                title: document.getElementById('title').value,
+                category: document.getElementById('category').value,
+                description: document.getElementById('description').value,
+                duration: document.getElementById('duration').value,
+                startDate: document.getElementById('startDate').value,
+                mentor: JSON.parse(localStorage.getItem('user'))?.name || 'Mentor'
+            };
+
+            const existingItems = JSON.parse(localStorage.getItem('custom_trainings')) || [];
+            existingItems.push(newItem);
+            localStorage.setItem('custom_trainings', JSON.stringify(existingItems));
+
+            alert('Training program created successfully!');
+
+            // Reset form and reload list
+            this.reset();
+            loadExistingTrainings();
+
+            // Scroll to the list
+            document.getElementById('existing-trainings').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>

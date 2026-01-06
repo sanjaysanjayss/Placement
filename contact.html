@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Placement Training System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: ["class"],
+            theme: {
+                container: { center: true, padding: "2rem", screens: { "2xl": "1400px" } },
+                extend: {
+                    colors: {
+                        border: "hsl(214 32% 91%)",
+                        input: "hsl(214 32% 91%)",
+                        ring: "hsl(222 47% 20%)",
+                        background: "hsl(210 20% 98%)",
+                        foreground: "hsl(222 47% 11%)",
+                        primary: { DEFAULT: "hsl(222 47% 20%)", foreground: "hsl(210 40% 98%)" },
+                        secondary: { DEFAULT: "hsl(180 45% 45%)", foreground: "hsl(0 0% 100%)" },
+                        destructive: { DEFAULT: "hsl(0 84% 60%)", foreground: "hsl(210 40% 98%)" },
+                        muted: { DEFAULT: "hsl(210 20% 94%)", foreground: "hsl(215 16% 47%)" },
+                        accent: { DEFAULT: "hsl(38 92% 50%)", foreground: "hsl(222 47% 11%)" },
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-background text-foreground min-h-screen flex flex-col">
+
+    <!-- Header will be injected by main.js -->
+
+    <main class="flex-1 py-16 lg:py-24">
+        <div class="container max-w-6xl">
+            <div class="text-center mb-16">
+                <h1 class="text-5xl font-extrabold font-display tracking-tight text-foreground mb-4">Get in Touch</h1>
+                <p class="text-xl text-muted-foreground max-w-2xl mx-auto font-medium">
+                    Have questions about placements or training? Our team is here to support you in every step of your
+                    career journey.
+                </p>
+            </div>
+
+            <div id="success-alert"
+                class="hidden mb-10 rounded-2xl border-2 border-emerald-500/20 bg-emerald-50 p-8 shadow-xl animate-in zoom-in-95 duration-500">
+                <div class="flex items-center gap-4">
+                    <div
+                        class="h-12 w-12 rounded-full bg-emerald-500 text-white flex items-center justify-center shadow-lg">
+                        <i data-lucide="check-circle" class="h-8 w-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-emerald-900">Query Submitted Successfully!</h3>
+                        <p class="text-emerald-700 font-medium">Your ticket ID: <span id="ticket-id"
+                                class="font-mono bg-white px-2 py-0.5 rounded border border-emerald-200 ml-1">TKT-123456</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- Sidebar Info -->
+                <div class="space-y-8">
+                    <div class="rounded-2xl border border-border bg-card p-8 shadow-card">
+                        <h2 class="text-xl font-bold font-display mb-6 flex items-center gap-3">
+                            <i data-lucide="building-2" class="h-6 w-6 text-primary"></i>
+                            Office Info
+                        </h2>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-sm font-bold uppercase tracking-wider text-muted-foreground mb-1">
+                                    Location</h4>
+                                <p class="font-medium">Sri Shakthi Institute of Engineering and Technology</p>
+                                <p class="text-sm text-muted-foreground">Salem - 636 004, Tamil Nadu, India</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold uppercase tracking-wider text-muted-foreground mb-1">Hours
+                                </h4>
+                                <p class="font-medium">Mon–Fri: 9:00 AM – 5:00 PM</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold uppercase tracking-wider text-muted-foreground mb-1">Email
+                                </h4>
+                                <p class="font-medium text-primary">placement@srishakthi.ac.in</p>
+                            </div>
+                            <div class="pt-4">
+                                <button
+                                    class="w-full inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-bold border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-4 shadow-sm">
+                                    <i data-lucide="message-square" class="h-4 w-4 mr-2"></i>
+                                    WhatsApp Chat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-2xl border border-border bg-card p-8 shadow-card">
+                        <h2 class="text-xl font-bold font-display mb-6">Department Directory</h2>
+                        <div class="space-y-6">
+                            <div class="flex justify-between items-center group cursor-pointer">
+                                <div>
+                                    <p class="text-sm font-bold">Placement Officer</p>
+                                    <p class="text-xs text-muted-foreground">Mr. XYZ</p>
+                                </div>
+                                <i data-lucide="mail"
+                                    class="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors"></i>
+                            </div>
+                            <div
+                                class="flex justify-between items-center group cursor-pointer border-t border-border pt-4">
+                                <div>
+                                    <p class="text-sm font-bold">Training Coordinator</p>
+                                    <p class="text-xs text-muted-foreground">Ms. ABC</p>
+                                </div>
+                                <i data-lucide="mail"
+                                    class="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors"></i>
+                            </div>
+                            <div
+                                class="flex justify-between items-center group cursor-pointer border-t border-border pt-4">
+                                <div>
+                                    <p class="text-sm font-bold">Technical Support</p>
+                                    <p class="text-xs text-muted-foreground">IT Dev Team</p>
+                                </div>
+                                <i data-lucide="mail"
+                                    class="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-2">
+                    <div class="rounded-2xl border border-border bg-card p-10 shadow-card">
+                        <h2 class="text-2xl font-bold font-display mb-8">Send a Message</h2>
+                        <form id="contact-form" class="space-y-8">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold">Full Name *</label>
+                                    <input id="name" type="text" required placeholder="John Doe"
+                                        class="flex h-12 w-full rounded-lg border border-input bg-background px-4 py-2 text-sm shadow-sm transition-all focus:ring-2 focus:ring-primary/20 focus:border-primary">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold">Email Address *</label>
+                                    <input id="email" type="email" required placeholder="john@example.com"
+                                        class="flex h-12 w-full rounded-lg border border-input bg-background px-4 py-2 text-sm shadow-sm transition-all focus:ring-2 focus:ring-primary/20 focus:border-primary">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold">User Type</label>
+                                    <select
+                                        class="flex h-12 w-full items-center justify-between rounded-lg border border-input bg-background px-4 py-2 text-sm shadow-sm transition-all focus:ring-2 focus:ring-primary/20 focus:border-primary">
+                                        <option value="student">Student</option>
+                                        <option value="recruiter">Recruiter</option>
+                                        <option value="trainer">Trainer</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold">Subject</label>
+                                    <select
+                                        class="flex h-12 w-full items-center justify-between rounded-lg border border-input bg-background px-4 py-2 text-sm shadow-sm transition-all focus:ring-2 focus:ring-primary/20 focus:border-primary">
+                                        <option value="placement">Placement Query</option>
+                                        <option value="training">Training Program</option>
+                                        <option value="tech">Technical Support</option>
+                                        <option value="general">General Inquiry</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold">Message *</label>
+                                <textarea id="message" required rows="6" placeholder="How can we help you?"
+                                    class="flex min-h-[150px] w-full rounded-lg border border-input bg-background px-4 py-3 text-sm shadow-sm transition-all focus:ring-2 focus:ring-primary/20 focus:border-primary resize-none"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full inline-flex items-center justify-center whitespace-nowrap rounded-lg text-md font-bold ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-14 px-8 shadow-2xl">
+                                <i data-lucide="send" class="h-5 w-5 mr-3"></i>
+                                Submit Inquiry
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- FAQ Link -->
+                    <div class="mt-8 text-center p-8 rounded-2xl bg-muted/30 border border-border">
+                        <p class="font-medium text-muted-foreground">Looking for quick answers?</p>
+                        <a href="#" class="inline-flex items-center text-primary font-bold hover:underline mt-2">
+                            Check our FAQ Section
+                            <i data-lucide="arrow-right" class="ml-1 h-4 w-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer will be injected by main.js -->
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script>
+        injectHeader();
+        injectFooter();
+    </script>
+</body>
+
+</html>
